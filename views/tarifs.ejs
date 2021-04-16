@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Centre Social Louise Michel</title>
+  <link rel='stylesheet' href='./stylesheets/style.css' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+    
+
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+      <!-- Barre de navigation -->
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./images/Accueil/logo.png" alt="" style= "height: 50px; border-radius: 10%;" class="d-fluid align-center">
+            Centre Social Louise Michel
+          </a>
+
+          <!-- Menu -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">Accueil</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Programmes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="/periscolaire">Le périscolaire</a></li>
+                      <li><a class="dropdown-item" href="/HalteGarderie">Petite enfance</a></li>
+                      <li><a class="dropdown-item" href="/prog-enfant">Enfants</a></li>
+                      <li><a class="dropdown-item" href="/prog-adolescents">Adolescents</a></li>
+                      <li><a class="dropdown-item" href="/adultes">Adultes</a></li>
+                      <li><a class="dropdown-item" href="/Familles">Familles</a></li>
+                      <!-- Vacances scolaires à mettre en com dès en fc des vacances -->
+                      <li><a class="dropdown-item" href="#">Les vacances scolaires</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/tarifs">Nos tarifs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Qui">Qui sommes nous?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Qui">Nos horaires</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Nous-contacter">Nous contacter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </nav>
+      <!-- Bienvenue -->
+      <h1>Bienvenue au centre social Louise Michel</h1>
+
+      <!-- SLIDE -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner col-12">
+          <div class="carousel-item active">
+            <img src="./images/Accueil/centre.jpg" class="d-fluid w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Accueil/annexe.jpg" class="d-fluid w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <h1 style="font-size: 50px;">Tarifs des activités culturelles</h1>
+      <h3 style="text-align: center; margin-top: 10px; font-size: 40px;">Tarifs enfants</h3>
+      <!-- Tableau tarifs Enfants -->
+      
+      <table id="activitescult" class="table table-bordered" style="margin-top: 30px; border: black;">
+        <thead>
+          <tr>
+            <th scope="col" style="font-size: 30px;">Âges</th>
+            <th scope="col" style="font-size: 30px;">Activités</th>
+            <th scope="col" style="font-size: 30px;">Tarifs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="font-size: 20px;">4-7 ans</th>
+            <td style="font-size: 20px;">Éveil à la danse</td>
+            <td>QF inférieur ou égal à 1000€ = 16€ à l'année
+              <br>QF supérieur à 1000€ = 20€ à l'année </td>
+          </tr>
+          <tr>
+            <th scope="row" style="font-size: 20px;">6-9 ans</th>
+            <td style="font-size: 20px;">Hip-Hop et breakdance</td>
+            <td style="font-size: 16px;">QF inférieur ou égal à 1000€ = 16€ à l'année
+              <br>QF supérieur à 1000€ = 20€ à l'année</td>
+          </tr>
+          <tr>
+            <th scope="row" style="font-size: 20px;">8-12 ans</th>
+            <td style="font-size: 20px;">Modern'Jazz et contemporain</td>
+            <td style="font-size: 16px;">QF inférieur ou égal à 1000€ = 16€ à l'année
+              <br>QF supérieur à 1000€ = 20€ à l'année</td>
+          </tr>
+          <tr>
+            <th scope="row" style="font-size: 20px;">8-12 ans</th>
+            <td style="font-size: 20px;">Théâtre</td>
+            <td style="font-size: 16px;">QF inférieur ou égal à 1000€ = 16€ à l'année
+              <br>QF supérieur à 1000€ = 20€ à l'année</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="text-align: center; margin-top: 20px; font-size: 40px;">Tarifs adolescents</h3>
+
+       <!-- Tableau tarifs Ados -->
+       <table class="table table-bordered" style="margin-top: 30px; border: black;">
+        <thead>
+          <tr>
+            <th scope="col" style="font-size: 30px;">Âges</th>
+            <th scope="col" style="font-size: 30px;">Activités</th>
+            <th scope="col" style="font-size: 30px;">Tarifs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="font-size: 20px;">10 ans et +</th>
+            <td style="font-size: 20px;">Hip-Hop et breakdance</td>
+            <td style="font-size: 16px;">QF inférieur ou égal à 1000€ = 16€ à l'année
+              <br>QF supérieur à 1000€ = 20€ à l'année </td>
+          </tr>
+          <tr>
+            <th scope="row" style="font-size: 20px;">12 ans et +</th>
+            <td style="font-size: 20px;">Théâtre</td>
+            <td style="font-size: 16px;">QF inférieur ou égal à 1000€ = 16€ à l'année
+              <br>QF supérieur à 1000€ = 20€ à l'année</td>
+          </tr>
+          <tr>
+            <th scope="row" style="font-size: 20px;">12 ans et +</th>
+            <td style="font-size: 20px;">Modern'Jazz et contemporain</td>
+            <td style="font-size: 16px;">QF inférieur ou égal à 1000€ = 16€ à l'année
+              <br>QF supérieur à 1000€ = 20€ à l'année</td>
+          </tr>
+          <tr>
+            <th scope="row" style="font-size: 20px;">13 ans et +</th>
+            <td style="font-size: 20px;">Guitare d'accompagnement</td>
+            <td style="font-size: 16px;">QF inférieur ou égal à 1000€ = 60€ à l'année
+              <br>QF supérieur à 1000€ = 65€ à l'année</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="text-align: center; margin-top: 20px; font-size: 40px;">Tarifs adultes</h3>
+
+      <!-- Tableau tarifs Adultes -->
+      <table class="table table-bordered" style="margin-top: 30px; border: black;">
+        <thead>
+          <tr>
+            <th scope="col" style="font-size: 30px;">Activités</th>
+            <th scope="col" style="font-size: 30px;">Tarifs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-size: 20px;">Théâtre</td>
+            <td style="font-size: 16px;">15€ l'année</td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Danse contemporaine</td>
+            <td style="font-size: 16px;">15€ l'année</td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Danse du monde</td>
+            <td style="font-size: 16px;">15€ l'année</td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Modern'Jazz et approche de la danse contemporaine</td>
+            <td style="font-size: 16px;">15€ l'année</td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Danse rythmée</td>
+            <td style="font-size: 16px;">15€ l'année</td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Coprs, mouvement et voix Atelier séniors</td>
+            <td style="font-size: 16px;">40€ l'année</td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Guitare d'accompagnement</td>
+            <td style="font-size: 16px;">90€ l'année</td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+
+      <h5 style="text-align: center; font-size: 30px; margin-top: 10px; margin-bottom: 40px;">L'adhésion au centre social s'élève à 12€</h5>
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+       <!-- Bas de page -->
+       <div class="card text-center" style="background: transparent;">
+        <div class="card-header" style="color: black; background: transparent; margin-bottom: 10px;">
+          <h1>Suivez-nous</h1>
+        </div>
+        <div class="card-body" style="background: transparent;">
+          <a href="https://www.facebook.com/centresociallouisemichelgolbey" class="btn btn-outline"
+            style="width: 60px; height: 60px; margin-bottom: 10px;">
+            <img src="./images/Bas de page/facebook-square-brands.svg"></i></a>
+          <a href="https://www.youtube.com/channel/UCveiS4xB037HySo1TRXHnSg" class="btn btn-outline"
+            style="width: 70px; height: 70px;"><img src="./images/Bas de page/youtube-brands.svg"></i></a>
+          <a href="https://www.instagram.com/centre_louise_michel_golbey/" class="btn btn-outline"
+            style="width: 60px; height: 60px;margin-bottom: 10px;"><img src="./images/Bas de page/instagram-square-brands.svg"></i></a>
+            <a href="https://www.tiktok.com/@louisemichel88190?lang=fr" class="btn btn-outline"
+            style="width: 55px; height: 55px; margin-bottom: 10px;"><img src="./images/Bas de page/tiktok-brands.svg"></i></a>
+          <a class="btn btn-outline" href="/Nous-contacter" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
+            Nous contacter
+          </a>
+          <a class="btn btn-outline" href="/Mentions-legales" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
+            Mentions légales
+          </a>
+
+        </div>
+        <div class="card-footer text-muted">
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

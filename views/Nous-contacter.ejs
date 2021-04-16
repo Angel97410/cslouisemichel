@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Centre Social Louise Michel</title>
+  <link rel='stylesheet' href='./stylesheets/contact.css' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <!-- Menu -->
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./images/Accueil/logo.png" alt="" style="height: 50px; border-radius: 10%;"
+              class="d-fluid align-center">
+            Centre Social Louise Michel
+          </a>
+
+         <!-- Menu -->
+         <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Programmes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="/periscolaire">Le périscolaire</a></li>
+                    <li><a class="dropdown-item" href="/HalteGarderie">Petite enfance</a></li>
+                    <li><a class="dropdown-item" href="/prog-enfant">Enfants</a></li>
+                    <li><a class="dropdown-item" href="/prog-adolescents">Adolescents</a></li>
+                    <li><a class="dropdown-item" href="/adultes">Adultes</a></li>
+                    <li><a class="dropdown-item" href="/Familles">Familles</a></li>
+                    <!-- Vacances scolaires à mettre en com dès en fc des vacances -->
+                    <li><a class="dropdown-item" href="#">Les vacances scolaires</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/tarifs">Nos tarifs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Qui">Qui sommes nous?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Qui">Nos horaires</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Nous-contacter">Nous contacter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"  style="background-image: url('./images/fond/Hnet-image.gif'); background-size: cover; background-position: center; padding: 0px;">
+            <!-- Nous contacter -->
+            <h1 class="col-md-12">Nous contacter</h1>
+            <!-- FORMULAIRE CONTACT -->
+            <form class="col-md-12" method="POST" action="/message" style="height: 100%; width: auto; border-radius: 50%; padding: 0px; margin-right: 15%; margin-left: 111.750px;">
+              <div class="mb-3" style="justify-content: center;">
+                <label for="exampleFormControlInput1" class="form-label" style="width: 100%; height: 50%;">Adresse
+                  mail</label>
+                <input type="email" class="form-control" name= "mail" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1"  class="form-label">Message</label>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="15"></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline"
+                style="background-color:  rgb(41, 138, 194) ;">Soumettre</button>
+            </form>
+          </div>
+          <div class="col-md-6" style="padding: 0px;">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15lBq1D0upKyChyi6X_uSikOTOU9UueCD" style="height: 100%; width: 100%;"></iframe>
+          </div>
+
+
+     <!-- Bas de page -->
+     <div class="card text-center" style="background: transparent;">
+      <div class="card-header" style="color: black; background: transparent; margin-bottom: 10px;">
+        <h1>Suivez-nous</h1>
+      </div>
+      <div class="card-body" style="background: transparent;">
+        <a href="https://www.facebook.com/centresociallouisemichelgolbey" class="btn btn-outline"
+          style="width: 60px; height: 60px; margin-bottom: 10px;">
+          <img src="./images/Bas de page/facebook-square-brands.svg"></i></a>
+        <a href="https://www.youtube.com/channel/UCveiS4xB037HySo1TRXHnSg" class="btn btn-outline"
+          style="width: 70px; height: 70px;"><img src="./images/Bas de page/youtube-brands.svg"></i></a>
+        <a href="https://www.instagram.com/centre_louise_michel_golbey/" class="btn btn-outline"
+          style="width: 60px; height: 60px;margin-bottom: 10px;"><img src="./images/Bas de page/instagram-square-brands.svg"></i></a>
+          <a href="https://www.tiktok.com/@louisemichel88190?lang=fr" class="btn btn-outline"
+          style="width: 55px; height: 55px; margin-bottom: 10px;"><img src="./images/Bas de page/tiktok-brands.svg"></i></a>
+        <a class="btn btn-outline" href="/Nous-contacter" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
+          Nous contacter
+        </a>
+        <a class="btn btn-outline" href="/Mentions-legales" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
+          Mentions légales
+        </a>
+
+      </div>
+      <div class="card-footer text-muted">
+      </div>
+    </div>
+
+
+
+
+
+
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+      </script>
+</body>
+
+</html>
