@@ -134,7 +134,7 @@ router.get('/Familles', function(req, res, next) {
 
 // Nos tarifs
 router.get('/tarifs', function(req, res, next) {
-  res.render('Tarifs');
+  res.render('tarifs');
 });
 
 // Page qui sommes nous
