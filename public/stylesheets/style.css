@@ -184,3 +184,7 @@ h1{
   display: flex;
   justify-content: center !important;
 }
+
+.carousel-item {
+  width: auto !important;
+}
