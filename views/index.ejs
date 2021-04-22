@@ -75,16 +75,16 @@
       <!-- Bienvenue -->
       <h1>Bienvenue au centre social Louise Michel</h1>
       <div class="alert alert-danger" role="alert">
-        <h4 class="alert-heading"><img src="./images/Accueil/tools-solid.svg" style="width: 50px; "> &ensp;&ensp;  Site en cours de construction</h4>
+        <h4 class="alert-heading"><img src="./images/Accueil/tools-solid.svg" style="width: 50px;" > &ensp;&ensp;  Site en cours de construction</h4>
       </div>
       <!-- SLIDE -->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner col-12">
           <div class="carousel-item active">
-            <img src="./images/Accueil/centre.jpg" class="d-fluid w-100" alt="...">
+            <img src="./images/Accueil/centre.jpg" class="d-fluid w-100" alt="Centre Louise Michel">
           </div>
           <div class="carousel-item">
-            <img src="./images/Accueil/annexe.jpg" class="d-fluid w-100" alt="...">
+            <img src="./images/Accueil/annexe.jpg" class="d-fluid w-100" alt="Annexe Louise Michel">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
@@ -105,21 +105,23 @@
            <div class="col-md-8"> 
             <!-- Nos actualités -->
            <h1>Nos actualités</h1>
-            <!-- <div class="row col-md-12 col-xs-12" style="background: transparent; margin-right: 0%;">
+            <div class="row col-md-12 col-xs-12" style="background: transparent; margin-right: 0%;">
               <% 
                 for(var i=0; i<actu.length; i++) {
                   %>
               <div class="card col-md-6 col-xs-12" style="margin: 0%; border: transparent; border-radius: 0%;">
-                <img src="<%= actu[i].photo %>" class="card-img-top" alt="...">
+                <img src="<%= actu[i].photo %>" class="card-img-top" alt="Actualités Louise Michel" style="width: auto; height: auto;">
                 <div class="card-body">
-                  <h5 class="card-title"><%= actu[i].titre %></h5>
-                  <p class="card-text"><%= actu[i].para %></p>
+                  <p style="color: gray;"><%= actu[i].date %></p>
+                  <h5 class="m card-title"><%= actu[i].titre %></h5>
+                  <p class="m card-text"><%= actu[i].para %></p>
+                  <p class="m card-text"><%= actu[i].autres %></p>
                 </div>
               </div>
               <%
                     }
                     %>
-            </div> -->
+            </div>
           </div>
           <!-- As a heading -->
           <div class="container-fluid col-md-4">

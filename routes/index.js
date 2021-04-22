@@ -1,7 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const { log } = require('debug');
-const { Router } = require('express');
+const {
+  log
+} = require('debug');
+const {
+  Router
+} = require('express');
 const nodemailer = require("nodemailer");
 var mongoose = require('mongoose');
 var options = {
@@ -17,7 +21,7 @@ mongoose.connect('mongodb+srv://Angelique:Ti.lilik974@cluster0.ajf4v.mongodb.net
       console.log("---------> Problème de connexion à la base de données MongoDB");
     } else {
       console.log("---------> Connecté à la base de données MongoDB")
-}
+    }
   }
 );
 var UserDB = require('../models/users')
@@ -37,43 +41,34 @@ let transporter = nodemailer.createTransport({
 });
 
 newsletter = []
-Newmail= [{}]
-newmessage=[{}]
+Newmail = [{}]
+newmessage = [{}]
 var actu = [{
-    photo: "./images/periscolaire/mercredis.jpg",
-    titre: "Activités des 6-7 ans",
-    para: "Un petit totem créer par les 6-7ans"
+    photo: "./images/Actualité/ACM.jpg",
+    date: "12/04/2021",
+    titre: "L’ ACCUEIL COLLECTIF DE MINEURS",
+    para: "Le Centre Social est exceptionnellement ouvert cette semaine pour les enfants des personnels prioritaires dans la gestion de la crise : soignants, travailleurs sociaux, etc .... Les familles concernées qui n’ auraient pas d’ autres solutions peuvent nous contacter pour inscrire leur enfant.",
+    autres: " Tel: 03.29.34.60.85 "
   },
   {
-    photo: "./images/periscolaire/mercredis.jpg",
-    titre: "Activités des 6-7 ans",
-    para: "Un petit totem créer par les 6-7ans"
+    photo: "./images/Actualité/AccPF.jpg",
+    date: "12/04/2021",
+    titre: "LIEU D’ACCUEIL PARENT-ENFANT",
+    para: "Exceptionnellement, malgré les mesures de confinement et en application des directives nationales, le lieu d’Accueil Parents Enfants sera ouvert le mercredi 14 avril et le mercredi 21 avril de 14h00 à 17h00. Si vous avez besoin d’échanger sur vos difficultés, de partager un moment avec vos enfants, vous serez les les bienvenus. Nous limiterons l’accueil à 5 personnes adultes.",
+    autres: ""
   },
-  {
-    photo: "./images/periscolaire/mercredis.jpg",
-    titre: "Activités des 6-7 ans",
-    para: "Un petit totem créer par les 6-7ans"
-  },
-  {
-    photo: "./images/periscolaire/mercredis.jpg",
-    titre: "Activités des 6-7 ans",
-    para: "Un petit totem créer par les 6-7ans"
-  },
-  {
-    photo: "./images/periscolaire/mercredis.jpg",
-    titre: "Activités des 6-7 ans",
-    para: "Un petit totem créer par les 6-7ans"
-  }
 ]
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', {actu});
+  res.render('index', {
+    actu
+  });
 });
 
 // Formulaire newsletter
 
-router.post('/mail', async function(req, res, next) {
-  var email =req.body.email;
+router.post('/mail', async function (req, res, next) {
+  var email = req.body.email;
   newsletter.push(email);
   console.log(newsletter);
 
@@ -85,7 +80,11 @@ router.post('/mail', async function(req, res, next) {
       Email: req.body.email,
     })
     await NewUser.save()
-    res.render('index', {actu}, {newsletter});
+    res.render('index', {
+      actu
+    }, {
+      newsletter
+    });
   } else {
     alert('votre adresse mail existe déjà')
     res.redirect('/')
@@ -93,57 +92,59 @@ router.post('/mail', async function(req, res, next) {
 });
 
 router.get('/', function (req, res, next) {
-  res.render('index', {actu});
+  res.render('index', {
+    actu
+  });
 });
 
 // Page programme Perisco
-router.get('/periscolaire', function(req, res, next) {
+router.get('/periscolaire', function (req, res, next) {
   res.render('periscolaire');
 });
 
 // Page programme activ culturelles
-router.get('/activitesCulturel', function(req, res, next) {
+router.get('/activitesCulturel', function (req, res, next) {
   res.render('activitesCulturel');
 });
 // Page programme Petite Enfance
-router.get('/HalteGarderie', function(req, res, next) {
+router.get('/HalteGarderie', function (req, res, next) {
   res.render('HalteGarderie');
 });
 
 // Page programme Enfant
-router.get('/prog-enfant', function(req, res, next) {
+router.get('/prog-enfant', function (req, res, next) {
   res.render('prog-enfant');
 });
 
 // Page programme Adolescent
-router.get('/prog-adolescents', function(req, res, next) {
+router.get('/prog-adolescents', function (req, res, next) {
   res.render('prog-adolescents');
 });
 
 // Page programme Adultes
-router.get('/adultes', function(req, res, next) {
+router.get('/adultes', function (req, res, next) {
   res.render('adultes');
 });
 
 
 // Page programme Familles
-router.get('/Familles', function(req, res, next) {
+router.get('/Familles', function (req, res, next) {
   res.render('Familles');
 });
 
 
 // Nos tarifs
-router.get('/tarifs', function(req, res, next) {
+router.get('/tarifs', function (req, res, next) {
   res.render('tarifs');
 });
 
 // Page qui sommes nous
-router.get('/Qui', function(req, res, next) {
+router.get('/Qui', function (req, res, next) {
   res.render('Qui');
 });
 
 // Nous contacter
-router.post('/message', async function(req, res, next) {
+router.post('/message', async function (req, res, next) {
   mail = req.body.mail;
   Newmail.push(mail);
   message = req.body.message;
@@ -164,12 +165,12 @@ router.post('/message', async function(req, res, next) {
   res.redirect('Nous-contacter')
 });
 
-router.get('/Nous-contacter', function(req, res, next) {
+router.get('/Nous-contacter', function (req, res, next) {
   res.render('Nous-contacter');
 });
 
 // Mentions légales
-router.get('/Mentions-legales', function(req, res, next) {
+router.get('/Mentions-legales', function (req, res, next) {
   res.render('Mentions-legales');
 });
 
