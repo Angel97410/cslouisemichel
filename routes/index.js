@@ -152,17 +152,17 @@ router.post('/message', async function (req, res, next) {
   console.log(mail, Newmail)
 
   let info = await transporter.sendMail({
-    from: '<mail>', // sender address
+    from:' <mail> ', // sender address
     to: "robert.angelique@outlook.com", // list of receivers
     subject: "Contact", // Subject line
     text: message, // plain text body
-    html: message + " " + mail, // html body
+    html: message + " " + " " + mail, // html body
   });
 
   console.log("Message sent: %s", info.messageId);
 
   console.log(mail)
-  res.redirect('Nous-contacter')
+  res.redirect('/')
 });
 
 router.get('/Nous-contacter', function (req, res, next) {
