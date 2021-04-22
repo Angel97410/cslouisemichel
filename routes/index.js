@@ -44,14 +44,14 @@ newsletter = []
 Newmail = [{}]
 newmessage = [{}]
 var actu = [{
-    photo: "./images/Actualité/ACM.jpg",
+    photo: "./images/Actu/ACM.jpg",
     date: "12/04/2021",
     titre: "L’ ACCUEIL COLLECTIF DE MINEURS",
-    para: "Le Centre Social est exceptionnellement ouvert cette semaine pour les enfants des personnels prioritaires dans la gestion de la crise : soignants, travailleurs sociaux, etc .... Les familles concernées qui n’ auraient pas d’ autres solutions peuvent nous contacter pour inscrire leur enfant.",
+    para: "Le Centre Social est exceptionnellement ouvert cette semaine pour les enfants des personnels prioritaires dans la gestion de la crise : soignants, travailleurs sociaux, etc... Les familles concernées qui n’ auraient pas d’ autres solutions peuvent nous contacter pour inscrire leur enfant.",
     autres: " Tel: 03.29.34.60.85 "
   },
   {
-    photo: "./images/Actualité/AccPF.jpg",
+    photo: "./images/Actu/AccPF.jpg",
     date: "12/04/2021",
     titre: "LIEU D’ACCUEIL PARENT-ENFANT",
     para: "Exceptionnellement, malgré les mesures de confinement et en application des directives nationales, le lieu d’Accueil Parents Enfants sera ouvert le mercredi 14 avril et le mercredi 21 avril de 14h00 à 17h00. Si vous avez besoin d’échanger sur vos difficultés, de partager un moment avec vos enfants, vous serez les les bienvenus. Nous limiterons l’accueil à 5 personnes adultes.",
