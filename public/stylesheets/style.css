@@ -89,7 +89,7 @@ h1{
 .card-img-top {
     display: block;
     width: 100% ;
-    height: 100% ;
+    /* height: 100% ; */
 }
 
 /* aide aux devoirs */

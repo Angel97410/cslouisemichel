@@ -62,7 +62,7 @@ var actu = [
     photo: "./images/Actu/AccPF.jpg",
     date: "12/04/2021",
     titre: "LIEU D’ACCUEIL PARENT-ENFANT",
-    para: "Exceptionnellement, malgré les mesures de confinement et en application des directives nationales, le lieu d’Accueil Parents Enfants sera ouvert le mercredi 14 avril et le mercredi 21 avril de 14h00 à 17h00. Si vous avez besoin d’échanger sur vos difficultés, de partager un moment avec vos enfants, vous serez les les bienvenus. Nous limiterons l’accueil à 5 personnes adultes.",
+    para: "Exceptionnellement, malgré les mesures de confinement et en application des directives nationales, le lieu d’Accueil Parents Enfants sera ouvert le mercredi 14 avril et le mercredi 21 avril de 14h00 à 17h00. Si vous avez besoin d’échanger sur vos difficultés, de partager un moment avec vos enfants, vous serez les bienvenus. Nous limiterons l’accueil à 5 personnes adultes.",
     autres: ""
   },
 ]
