@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+let alert = require('alert'); 
 const {
   log
 } = require('debug');
@@ -88,14 +89,12 @@ router.post('/mail', async function (req, res, next) {
       Email: req.body.email,
     })
     await NewUser.save()
-    res.render('index', {
-      actu
-    }, {
-      newsletter
-    });
-  } else {
-    alert('votre adresse mail existe déjà')
+    alert("Vous êtes maintenant inscrit à notre newsletter")
+    // res.render('index', {actu}, {newsletter},); 
     res.redirect('/')
+  } else {
+      alert("Votre adresse mail existe déjà")
+      res.redirect('/')
   }
 });
 
@@ -160,17 +159,17 @@ router.post('/message', async function (req, res, next) {
   console.log(mail, Newmail)
 
   let info = await transporter.sendMail({
-    from:' <mail> ', // sender address
+    from: '<robert.angelique@outlook.com>', // sender address
     to: "robert.angelique@outlook.com", // list of receivers
     subject: "Contact", // Subject line
     text: message, // plain text body
-    html: message + " " + " " + mail, // html body
+    html: "Adresse mail :" + mail + "  " + "Message :" + message, // html body
   });
 
   console.log("Message sent: %s", info.messageId);
-
   console.log(mail)
   res.redirect('/')
+  alert("Message envoyé")
 });
 
 router.get('/Nous-contacter', function (req, res, next) {
