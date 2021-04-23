@@ -43,7 +43,15 @@ let transporter = nodemailer.createTransport({
 newsletter = []
 Newmail = [{}]
 newmessage = [{}]
-var actu = [{
+var actu = [
+  {
+    photo: "./images/Actu/reprise.jpg",
+    date: "23/04/2021",
+    titre: "Réouverture",
+    para: "Réouverture de la Halte-garderie, et reprise du périscolaire pour les maternelles et primaires.",
+    autres: "À partir du lundi 26/04/2021"
+  },
+  {
     photo: "./images/Actu/ACM.jpg",
     date: "12/04/2021",
     titre: "L’ ACCUEIL COLLECTIF DE MINEURS",

@@ -11,6 +11,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
   <link rel="shortcut icon" type="image/x-icon" href="./images/Accueil/logo.png" alt="Logo_Louise_Michel">
+  <meta name="viewport" content="width=device-width, initial-scale=0.3">
 
 
 
@@ -111,7 +112,7 @@
                 for(var i=0; i<actu.length; i++) {
                   %>
               <div class="card col-md-6 col-xs-12" style="margin: 0%; border: transparent; border-radius: 0%;">
-                <img src="<%= actu[i].photo %>" class="card-img-top" alt="Actualités Louise Michel" style="width: auto; height: auto;">
+                <img src="<%= actu[i].photo %>" class="card-img-top img_actu" alt="Actualités Louise Michel" style="width: auto; height: auto;">
                 <div class="card-body">
                   <p style="color: gray;"><%= actu[i].date %></p>
                   <h5 class="m card-title"><%= actu[i].titre %></h5>
