@@ -3,7 +3,8 @@
 
 <head>
   <title>Centre Social Louise Michel Golbey</title>
-  <meta name="description" content= "Association loi 1901, le Centre social Louise Michel de Golbey est un lieu de proximité ouvert à tous, proposant un accueil convivial.">
+  <meta name="description"
+    content="Association loi 1901, le Centre social Louise Michel de Golbey est un lieu de proximité ouvert à tous, proposant un accueil convivial.">
   <link rel='stylesheet' href='./stylesheets/style.css' />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -170,6 +171,29 @@
       </div>
 
 
+      <!-- Messenger Plug-in Discussion Code -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: 'v10.0'
+          });
+        };
+
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Plug-in Discussion code -->
+      <div class="fb-customerchat" attribution="setup_tool" page_id="269363320180435">
+      </div>
 
 
 

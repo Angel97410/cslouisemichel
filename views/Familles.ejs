@@ -3,7 +3,8 @@
 
 <head>
   <title>Centre Social Louise Michel Golbey</title>
-  <meta name="description" content= "Association loi 1901, le Centre social Louise Michel de Golbey est un lieu de proximité ouvert à tous, proposant un accueil convivial.">
+  <meta name="description"
+    content="Association loi 1901, le Centre social Louise Michel de Golbey est un lieu de proximité ouvert à tous, proposant un accueil convivial.">
   <link rel='stylesheet' href='./stylesheets/style.css' />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -21,16 +22,16 @@
 
     <div class="row">
 
+      <!-- Menu -->
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./images/Accueil/logo.png" alt="" style="height: 50px; border-radius: 10%;"
+              class="d-fluid align-center">
+            Centre Social Louise Michel
+          </a>
+
           <!-- Menu -->
-          <nav class="navbar navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">
-                <img src="./images/Accueil/logo.png" alt="" style="height: 50px; border-radius: 10%;"
-                  class="d-fluid align-center">
-                Centre Social Louise Michel
-              </a>
-    
-              <!-- Menu -->
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">Accueil</a>
@@ -103,62 +104,93 @@
 
       <!-- Présentation boîtes -->
 
-<!-- Lieu d'accueil parent/enfant -->
+      <!-- Lieu d'accueil parent/enfant -->
 
-      <div class="card-mb-3 col-lg-6 col-sm-12 col-md-12" style="max-width: auto; width: 65%; margin: auto; background-color: rgba(255, 255, 255, 0.603)">
+      <div class="card-mb-3 col-lg-6 col-sm-12 col-md-12"
+        style="max-width: auto; width: 65%; margin: auto; background-color: rgba(255, 255, 255, 0.603)">
         <div class="row g-0">
           <div class="col-lg-6 col-sm-12 col-md-12">
-            <img src="./images/Halte/booties-2047596_1920.jpg" class="card-img-top d-fluid col-sm-12 col-lg-12" alt="..."
-              style="margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto;">
+            <img src="./images/Halte/booties-2047596_1920.jpg" class="card-img-top d-fluid col-sm-12 col-lg-12"
+              alt="..." style="margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto;">
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="card-body d-fluid">
               <h5 class="card-title"><b>Lieu d'accueil enfant/parent : À petits pas</b></h5>
               <br>
               <p class="card-text" style="margin-top: auto;">
-                <h5>Au futur parent ainsi qu'aux parents ayant un enfant de moins de 4 ans  </h5>
-                <br> 
+                <h5>Au futur parent ainsi qu'aux parents ayant un enfant de moins de 4 ans </h5>
+                <br>
                 <br>-Un lieu de rencontres, d'ouverture et d'échange entre parents
                 <br>-Un espace de parole et d'écoute structurant la relation parent/enfant
-                <br>-Un lieu de vie où chacun à sa place et où les compétences des parents et des enfants sont reconnues et développées
+                <br>-Un lieu de vie où chacun à sa place et où les compétences des parents et des enfants sont reconnues
+                et développées
                 <br>-Un espace ludique, propice à la socialisation dès le plus jeune âge.
-                <br>-Un moment convivial où les enfants et les parents prennent plaisir à jouer à se parler, et à être ensemble.
+                <br>-Un moment convivial où les enfants et les parents prennent plaisir à jouer à se parler, et à être
+                ensemble.
               </p>
-              <a class="btn btn-outline-dark" href="#" role="button" style="align-items: center; margin-top: 30px;">Anonyme et Gratuit</a>
+              <a class="btn btn-outline-dark" href="#" role="button"
+                style="align-items: center; margin-top: 30px;">Anonyme et Gratuit</a>
             </div>
           </div>
         </div>
       </div>
 
 
+      <!-- Messenger Plug-in Discussion Code -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: 'v10.0'
+          });
+        };
 
-        
-    <!-- Bas de page -->
-    <div class="card text-center" style="background: transparent;">
-      <div class="card-header" style="color: black; background: transparent; margin-bottom: 10px;">
-        <h1>Suivez-nous</h1>
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Plug-in Discussion code -->
+      <div class="fb-customerchat" attribution="setup_tool" page_id="269363320180435">
       </div>
-      <div class="card-body" style="background: transparent;">
-        <a href="https://www.facebook.com/centresociallouisemichelgolbey" class="btn btn-outline"
-          style="width: 60px; height: 60px; margin-bottom: 10px;">
-          <img src="./images/Bas de page/facebook-square-brands.svg"></i></a>
-        <a href="https://www.youtube.com/channel/UCveiS4xB037HySo1TRXHnSg" class="btn btn-outline"
-          style="width: 70px; height: 70px;"><img src="./images/Bas de page/youtube-brands.svg"></i></a>
-        <a href="https://www.instagram.com/centre_louise_michel_golbey/" class="btn btn-outline"
-          style="width: 60px; height: 60px;margin-bottom: 10px;"><img src="./images/Bas de page/instagram-square-brands.svg"></i></a>
+
+
+      <!-- Bas de page -->
+      <div class="card text-center" style="background: transparent;">
+        <div class="card-header" style="color: black; background: transparent; margin-bottom: 10px;">
+          <h1>Suivez-nous</h1>
+        </div>
+        <div class="card-body" style="background: transparent;">
+          <a href="https://www.facebook.com/centresociallouisemichelgolbey" class="btn btn-outline"
+            style="width: 60px; height: 60px; margin-bottom: 10px;">
+            <img src="./images/Bas de page/facebook-square-brands.svg"></i></a>
+          <a href="https://www.youtube.com/channel/UCveiS4xB037HySo1TRXHnSg" class="btn btn-outline"
+            style="width: 70px; height: 70px;"><img src="./images/Bas de page/youtube-brands.svg"></i></a>
+          <a href="https://www.instagram.com/centre_louise_michel_golbey/" class="btn btn-outline"
+            style="width: 60px; height: 60px;margin-bottom: 10px;"><img
+              src="./images/Bas de page/instagram-square-brands.svg"></i></a>
           <a href="https://www.tiktok.com/@louisemichel88190?lang=fr" class="btn btn-outline"
-          style="width: 55px; height: 55px; margin-bottom: 10px;"><img src="./images/Bas de page/tiktok-brands.svg"></i></a>
-        <a class="btn btn-outline" href="/Nous-contacter" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
-          Nous contacter
-        </a>
-        <a class="btn btn-outline" href="/Mentions-legales" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
-          Mentions légales
-        </a>
+            style="width: 55px; height: 55px; margin-bottom: 10px;"><img
+              src="./images/Bas de page/tiktok-brands.svg"></i></a>
+          <a class="btn btn-outline" href="/Nous-contacter"
+            style="margin-bottom: 15px;  color: black; font-size: 30px;">
+            Nous contacter
+          </a>
+          <a class="btn btn-outline" href="/Mentions-legales"
+            style="margin-bottom: 15px;  color: black; font-size: 30px;">
+            Mentions légales
+          </a>
 
+        </div>
+        <div class="card-footer text-muted">
+        </div>
       </div>
-      <div class="card-footer text-muted">
-      </div>
-    </div>
 
 
 

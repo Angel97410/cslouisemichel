@@ -3,7 +3,8 @@
 
 <head>
   <title>Centre Social Louise Michel Golbey</title>
-  <meta name="description" content= "Association loi 1901, le Centre social Louise Michel de Golbey est un lieu de proximité ouvert à tous, proposant un accueil convivial.">
+  <meta name="description"
+    content="Association loi 1901, le Centre social Louise Michel de Golbey est un lieu de proximité ouvert à tous, proposant un accueil convivial.">
   <link rel='stylesheet' href='./stylesheets/style.css' />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -21,17 +22,17 @@
 
     <div class="row">
 
+      <!-- Menu -->
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./images/Accueil/logo.png" alt="" style="height: 50px; border-radius: 10%;"
+              class="d-fluid align-center">
+            Centre Social Louise Michel
+          </a>
+
           <!-- Menu -->
-          <nav class="navbar navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">
-                <img src="./images/Accueil/logo.png" alt="" style="height: 50px; border-radius: 10%;"
-                  class="d-fluid align-center">
-                Centre Social Louise Michel
-              </a>
-    
-              <!-- Menu -->
-              <!-- Menu -->
+          <!-- Menu -->
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">Accueil</a>
@@ -102,19 +103,21 @@
 
       <!-- Titre Activités culturelles -->
       <h1 class="" style="color: rgb(0, 0, 0);">Les activités culturelles</h1>
-      
+
       <!-- Titre Activités enfants 4-11 ans -->
       <h4 class="text-center" style="color: rgb(0, 0, 0);">Les activités enfants de 4 à 12 ans</h4>
-      
+
       <div class="container-fluid">
         <div class="row" style="align-items: stretch;">
           <!-- Eveil a la danse -->
           <div class="d-flex align-items-stretch col-sm-6 col-md-4 col-lg-3 mt-4">
             <div class="card card-inverse card-info">
-              <img class="card-img-top" src="./images/Cuturel/ballet-659171_1920.jpg" style="width: auto; height: auto;">
-              <div class="card-block" style="background-color: rgba(255, 255, 255, 0.603); text-align: center; height: auto;">
+              <img class="card-img-top" src="./images/Cuturel/ballet-659171_1920.jpg"
+                style="width: auto; height: auto;">
+              <div class="card-block"
+                style="background-color: rgba(255, 255, 255, 0.603); text-align: center; height: auto;">
                 <figure class="profile profile-inline">
-                  <img src="./images/Cuturel/ballet-659171_1920.jpg" class="profile-avatar" alt="" >
+                  <img src="./images/Cuturel/ballet-659171_1920.jpg" class="profile-avatar" alt="">
                 </figure>
                 <h4 class="card-title fs-5">Eveil à la danse</h4>
                 <h6 class="card-subtitle mb-2 text-muted" style="text-align: center;">De 4 à 7 ans</h6>
@@ -156,10 +159,10 @@
           <!-- Atelier Modern Jazz -->
           <div class="d-flex align-items-stretch col-sm-6 col-md-4 col-lg-3 mt-4">
             <div class="card card-inverse card-info">
-              <img class="card-img-top" src="./images/Cuturel/ballerinas-1376250_1920.jpg"  style="width: auto; height: auto;">
+              <img class="card-img-top" src="./images/Cuturel/spectacle-danse.jpg" style="width: auto; height: auto;">
               <div class="card-block" style="background-color: rgba(255, 255, 255, 0.603); text-align: center; ">
                 <figure class="profile profile-inline">
-                  <img src="./images/Cuturel/ballerinas-1376250_1920.jpg" class="profile-avatar" alt="">
+                  <img src="./images/Cuturel/spectacle-danse.jpg" class="profile-avatar" alt="">
                 </figure>
                 <h4 class="card-title fs-5" style="text-align: center;">Atelier Modern Jazz et base contemporain</h4>
                 <h6 class="card-subtitle mb-2 text-muted" style="text-align: center;">De 8 à 12 ans</h6>
@@ -173,7 +176,7 @@
               </div>
             </div>
           </div>
-      
+
           <!-- Atelier théâtre -->
           <div class="d-flex align-items-stretch col-sm-6 col-md-4 col-lg-3 mt-4">
             <div class="card card-inverse card-info">
@@ -196,8 +199,36 @@
           </div>
         </div>
       </div>
-              
-      
+
+      <!-- Messenger Plug-in Discussion Code -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: 'v10.0'
+          });
+        };
+
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Plug-in Discussion code -->
+      <div class="fb-customerchat" attribution="setup_tool" page_id="269363320180435">
+      </div>
+
+
+
+
+
+
       <!-- Bas de page -->
       <div class="card text-center" style="background: transparent;">
         <div class="card-header" style="color: black; background: transparent; margin-bottom: 10px;">
@@ -210,13 +241,17 @@
           <a href="https://www.youtube.com/channel/UCveiS4xB037HySo1TRXHnSg" class="btn btn-outline"
             style="width: 70px; height: 70px;"><img src="./images/Bas de page/youtube-brands.svg"></i></a>
           <a href="https://www.instagram.com/centre_louise_michel_golbey/" class="btn btn-outline"
-            style="width: 60px; height: 60px;margin-bottom: 10px;"><img src="./images/Bas de page/instagram-square-brands.svg"></i></a>
-            <a href="https://www.tiktok.com/@louisemichel88190?lang=fr" class="btn btn-outline"
-            style="width: 55px; height: 55px; margin-bottom: 10px;"><img src="./images/Bas de page/tiktok-brands.svg"></i></a>
-          <a class="btn btn-outline" href="/Nous-contacter" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
+            style="width: 60px; height: 60px;margin-bottom: 10px;"><img
+              src="./images/Bas de page/instagram-square-brands.svg"></i></a>
+          <a href="https://www.tiktok.com/@louisemichel88190?lang=fr" class="btn btn-outline"
+            style="width: 55px; height: 55px; margin-bottom: 10px;"><img
+              src="./images/Bas de page/tiktok-brands.svg"></i></a>
+          <a class="btn btn-outline" href="/Nous-contacter"
+            style="margin-bottom: 15px;  color: black; font-size: 30px;">
             Nous contacter
           </a>
-          <a class="btn btn-outline" href="/Mentions-legales" style="margin-bottom: 15px;  color: black; font-size: 30px;" >
+          <a class="btn btn-outline" href="/Mentions-legales"
+            style="margin-bottom: 15px;  color: black; font-size: 30px;">
             Mentions légales
           </a>
 
