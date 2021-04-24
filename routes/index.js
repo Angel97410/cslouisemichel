@@ -90,7 +90,8 @@ router.post('/mail', async function (req, res, next) {
     })
     await NewUser.save()
     alert("Vous êtes maintenant inscrit à notre newsletter")
-    res.render('index', {actu}, {newsletter},); 
+    // res.render('index', {actu}, {newsletter},);
+    res.redirect('/') 
   } else {
       alert("Votre adresse mail existe déjà")
       res.redirect('/')
