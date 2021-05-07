@@ -67,7 +67,7 @@ var actu = [
     autres: ""
   },
 ]
-/* GET home page. */
+/* ACCUEIL*/
 router.get('/', function (req, res, next) {
   res.render('index', {
     actu
@@ -109,10 +109,6 @@ router.get('/periscolaire', function (req, res, next) {
   res.render('periscolaire');
 });
 
-// Page programme activ culturelles
-router.get('/activitesCulturel', function (req, res, next) {
-  res.render('activitesCulturel');
-});
 // Page programme Petite Enfance
 router.get('/HalteGarderie', function (req, res, next) {
   res.render('HalteGarderie');
@@ -179,6 +175,11 @@ router.get('/Nous-contacter', function (req, res, next) {
 // Mentions légales
 router.get('/Mentions-legales', function (req, res, next) {
   res.render('Mentions-legales');
+});
+
+// Nos partenaires
+router.get('/partenaires', function (req, res, next) {
+  res.render('partenaires');
 });
 
 
