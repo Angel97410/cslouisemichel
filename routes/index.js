@@ -46,6 +46,13 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/post.png",
+    date: "20/05/2021",
+    titre: "N'hésitez pas à vous inscrire à un ou plusieurs groupes.",
+    para: "Par mail : cslouisemichel@hotmail.fr",
+    autres: "ou par téléphone : 03 29 34 60 85"
+  },
+  {
     photo: "./images/Actu/reprise.jpg",
     date: "23/04/2021",
     titre: "Réouverture",
