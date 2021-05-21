@@ -66,13 +66,6 @@ var actu = [
     para: "Réouverture de la Halte-garderie, et reprise du périscolaire pour les maternelles et primaires.",
     autres: "À partir du lundi 26/04/2021"
   },
-  {
-    photo: "./images/Actu/ACM.jpg",
-    date: "12/04/2021",
-    titre: "L’ ACCUEIL COLLECTIF DE MINEURS",
-    para: "Le Centre Social est exceptionnellement ouvert cette semaine pour les enfants des personnels prioritaires dans la gestion de la crise : soignants, travailleurs sociaux, etc... Les familles concernées qui n’ auraient pas d’ autres solutions peuvent nous contacter pour inscrire leur enfant.",
-    autres: " Tel: 03.29.34.60.85 "
-  },
 ]
 /* ACCUEIL*/
 router.get('/', function (req, res, next) {
