@@ -46,25 +46,18 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/prog.png",
+    date: "28/05/2021",
+    titre: "Programme de reprise des activités",
+    para: " ",
+    autres: " "
+  },
+  {
     photo: "./images/Actu/post-reprise.png",
     date: "21/05/2021",
     titre: "Reprise des activités - sport en salle avec les animateurs du Centre Social",
     para: " ",
     autres: " "
-  },
-  {
-    photo: "./images/Actu/post.png",
-    date: "20/05/2021",
-    titre: "N'hésitez pas à vous inscrire à un ou plusieurs groupes.",
-    para: "Par mail : cslouisemichel@hotmail.fr",
-    autres: "ou par téléphone : 03 29 34 60 85"
-  },
-  {
-    photo: "./images/Actu/reprise.jpg",
-    date: "23/04/2021",
-    titre: "Réouverture",
-    para: "Réouverture de la Halte-garderie, et reprise du périscolaire pour les maternelles et primaires.",
-    autres: "À partir du lundi 26/04/2021"
   },
 ]
 /* ACCUEIL*/

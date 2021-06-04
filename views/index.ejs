@@ -111,6 +111,16 @@
             <h1>Nos actualités</h1>
             <div class="row col-md-12 col-xs-12" style="background: transparent; margin-right: 0%;">
               <div class="card col-md-6 col-xs-12" style="margin: 0%; border: transparent; border-radius: 0%;">
+                  <img src="./images/Actu/fete.png">
+                <div class="card-body">
+                  <p style="color: gray;">03/06/2021</p>
+                  <h5 class="m card-title">Le Haut du Gras renaît de ses sens....</h5>
+                  <p class="m card-text">Plus d’un an qu’on attendait ce moment....</p>
+                  <a class="btn btn-outline-dark m" href="/actualite" role="button" style="align-items: center; margin-top: 20px;">En savoir plus</a>
+                </div>
+              </div>
+
+              <div class="card col-md-6 col-xs-12" style="margin: 0%; border: transparent; border-radius: 0%;">
                 <video controls style="width: auto; height: auto;" style="justify-content: center;">
                   <source src="./images/Actu/danse.mp4" type="video/mp4">
                 </video>
@@ -120,15 +130,15 @@
                   <p class="m card-text">RDV pour tous le Samedi 5 juin au Centre Social</p>
                   <a class="btn btn-outline-dark m" href="/actualite" role="button" style="align-items: center; margin-top: 30px;">En savoir plus</a>
                 </div>
-
               </div>
+              
               <% 
                 for(var i=0; i<actu.length; i++) {
                   %>
               <div class="card col-md-6 col-xs-12" style="margin: 0%; border: transparent; border-radius: 0%;">
                 <img src="<%= actu[i].photo %>" class="card-img-top img_actu" alt="Actualités">
                 <div class="card-body">
-                  <p style="color: gray;"><%= actu[i].date %></p>
+                  <p style="color: gray;">Publié le : <%= actu[i].date %></p>
                   <h5 class="m card-title"><%= actu[i].titre %></h5>
                   <p class="m card-text"><%= actu[i].para %></p>
                   <p class="m card-text"><%= actu[i].autres %></p>
