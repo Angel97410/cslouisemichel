@@ -46,6 +46,13 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/projet-social.png",
+    date: "04/06/2021",
+    titre: "Projet du centre social",
+    para: " ",
+    autres: " "
+  },
+  {
     photo: "./images/Actu/prog.png",
     date: "28/05/2021",
     titre: "Programme de reprise des activités",
