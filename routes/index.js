@@ -152,18 +152,19 @@ router.post('/message', async function (req, res, next) {
   Newmail.push(mail);
   message = req.body.message;
   newmessage.push(message);
-  console.log(mail, Newmail)
+  // console.log(mail, Newmail)
 
   let info = await transporter.sendMail({
     from: '<robert.angelique@outlook.com>', // sender address
     to: "robert.angelique@outlook.com", // list of receivers
     subject: "Contact", // Subject line
     text: message, // plain text body
-    html: "Adresse mail :" + mail + "  " + "Message :" + message, // html body
+    html: "Adresse mail :" + mail + "  " + "Message : " + message, // html body
   });
 
-  console.log("Message sent: %s", info.messageId);
-  console.log(mail)
+
+  // console.log("Message sent: %s", info.messageId);
+  // console.log(mail)
   res.redirect('/')
   alert("Message envoyé")
 });
