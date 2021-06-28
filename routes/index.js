@@ -31,7 +31,7 @@ var options = {
   connectTimeoutMS: 5000,
   useNewUrlParser: true
 }
-let transporter = nodemailer.createTransport({
+let transporter = nodemailer.createTransport({ pool:true,
   host: "smtp.office365.com",
   port: 587,
   secure: false, // true for 465, false for other ports
@@ -40,6 +40,24 @@ let transporter = nodemailer.createTransport({
     pass: 'Ti.lilik974' // MDP
   },
 });
+
+var ovh = require('ovh')({
+  endpoint: 'ovh-eu',
+  appKey: 'u4sryhtISV5XLUDF',
+  appSecret: 'mddaNsiYuzb5B11zaoxTpzXwFj0NFRP9'
+});
+
+ovh.request('POST', '/auth/credential', {
+  'accessRules': [
+    { 'method': 'GET', 'path': '/*'},
+    { 'method': 'POST', 'path': '/message*jobs'},
+    { 'method': 'PUT', 'path': '/*'},
+    { 'method': 'DELETE', 'path': '/*'}
+  ]
+}, function (error, credential) {
+  console.log(error || credential);
+});
+
 
 newsletter = []
 Newmail = [{}]
@@ -155,7 +173,7 @@ router.post('/message', async function (req, res, next) {
   // console.log(mail, Newmail)
 
   let info = await transporter.sendMail({
-    from: '<robert.angelique@outlook.com>', // sender address
+    from: '"Formulaire Contact" <robert.angelique@outlook.com>', // sender address
     to: "robert.angelique@outlook.com", // list of receivers
     subject: "Contact", // Subject line
     text: message, // plain text body
@@ -166,7 +184,8 @@ router.post('/message', async function (req, res, next) {
   // console.log("Message sent: %s", info.messageId);
   // console.log(mail)
   res.redirect('/')
-  alert("Message envoyé")
+  transporter.close()
+  // alert("Message envoyé")
 });
 
 router.get('/Nous-contacter', function (req, res, next) {
