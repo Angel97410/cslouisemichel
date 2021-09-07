@@ -15,9 +15,9 @@
     "module": "^1.2.5",
     "mongoose": "^5.11.16",
     "morgan": "~1.9.1",
-    "nodejs-nodemailer-outlook": "^1.2.3",
+    "nodejs-nodemailer-outlook": "^1.2.4",
     "nodemailer": "^6.5.0",
-    "nodemon": "^2.0.7",
+    "nodemon": "^2.0.12",
     "ovh": "^2.0.3",
     "popup": "0.0.3",
     "popups": "^1.1.3"
