@@ -85,6 +85,27 @@ var actu = [
     autres: " "
   },
 ]
+
+var sport = [ 
+  {
+    photo: "./images/Cuturel/gym.jpg",
+   titre: "Remise en forme adultes",
+   description1: "Mardi: 18h30 à 19h30 ",
+   description2: "Jeudi: 18h30 à 19h30"
+  },
+  {
+    photo: "./images/Cuturel/Cosec.jpg",
+    titre:"Sport en salle famille, ados, adultes",
+    description1: "Mardi: 18h30 à 20h30 COSEC",
+    description2: "Dimanche: 16h00 à 18h00 Foyer de l'enfance",
+  },
+  {
+    photo: "./images/Cuturel/piscine.jpg",
+    titre:"Aquagym",
+    description1: "Mercredi: 19h00 à 20h00",
+    description2: "20h00 à 21h00 À la piscine de Golbey",
+  },
+]
 /* ACCUEIL*/
 router.get('/', function (req, res, next) {
   res.render('index', {
@@ -143,8 +164,9 @@ router.get('/prog-adolescents', function (req, res, next) {
 });
 
 // Page programme Adultes
+
 router.get('/adultes', function (req, res, next) {
-  res.render('adultes');
+  res.render('adultes', {sport});
 });
 
 
