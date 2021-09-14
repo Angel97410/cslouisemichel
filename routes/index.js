@@ -86,6 +86,39 @@ var actu = [
   },
 ]
 
+// var art = [ 
+//   {
+//     photos: "./images/Cuturel/theatre2.jpg",
+//    titre: "Théâtre",
+//    jour: "Les mercredis de 18h30 à 20h00.",
+//    paragraphe: "Textes, mimes, parodies et écriture résument cet atelier aussi riche que varié ! Rire garanti !",
+//   },
+//   {
+//     photos: "./images/Cuturel/Cosec.jpg",
+//     titre:"Sport en salle famille, ados, adultes",
+//     jour: "Mardi: 18h30 à 20h30 COSEC",
+//     paragraphe: "Dimanche: 16h00 à 18h00 Foyer de l'enfance",
+//   },
+//   {
+//     photos: "./images/Cuturel/piscine.jpg",
+//     titre:"Aquagym",
+//     jour: "Mercredi: 19h00 à 20h00",
+//     paragraphe: "20h00 à 21h00 À la piscine de Golbey",
+//   },
+//   {
+//     photos: "./images/Cuturel/yoga.jpg",
+//     titre:"Yoga sur chaise séniors",
+//     jour: "Vendredi: 14h00 à 16h00",
+//     paragraphe: " ",
+//   },
+//   {
+//     photos: "./images/Cuturel/yoga1.jpg",
+//     titre:"Yoga intégral adultes",
+//     jour: "Vendredi: 18h30 à 20h00",
+//     paragraphe: " ",
+//   },
+// ]
+
 var sport = [ 
   {
     photo: "./images/Cuturel/gym.jpg",
@@ -104,6 +137,18 @@ var sport = [
     titre:"Aquagym",
     description1: "Mercredi: 19h00 à 20h00",
     description2: "20h00 à 21h00 À la piscine de Golbey",
+  },
+  {
+    photo: "./images/Cuturel/yoga.jpg",
+    titre:"Yoga sur chaise séniors",
+    description1: "Vendredi: 14h00 à 16h00",
+    description2: " ",
+  },
+  {
+    photo: "./images/Cuturel/yoga1.jpg",
+    titre:"Yoga intégral adultes",
+    description1: "Vendredi: 18h30 à 20h00",
+    description2: " ",
   },
 ]
 /* ACCUEIL*/
