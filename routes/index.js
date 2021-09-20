@@ -64,6 +64,13 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/activ-actu.png",
+    date: "17/09/2021",
+    titre: "Nouvelles activités au Centre Social !",
+    para: " ",
+    autres: " "
+  },
+  {
     photo: "./images/Actu/projet-social.png",
     date: "04/06/2021",
     titre: "Projet du centre social",
@@ -76,14 +83,7 @@ var actu = [
     titre: "Programme de reprise des activités",
     para: " ",
     autres: " "
-  },
-  {
-    photo: "./images/Actu/post-reprise.png",
-    date: "21/05/2021",
-    titre: "Reprise des activités - sport en salle avec les animateurs du Centre Social",
-    para: " ",
-    autres: " "
-  },
+  }
 ]
 
 // var art = [ 
