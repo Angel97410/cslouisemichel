@@ -64,6 +64,13 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/forum.jpg",
+    date: "01/10/2021",
+    titre: "Le forum des familles débute bientôt !! ",
+    para: "Pour les personnes non véhiculées, le centre social vous propose une navette (départ le matin et retour prévu dans l'après midi). Vous pouvez vous inscrire auprès de Joséphine (référente famille) ou à l'accueil du centre social. ",
+    autres: " ⚠️ Certains ateliers ne sont accessibles que sur inscription auprès de la CAE au 0329399810 ⚠️ "
+  },
+  {
     photo: "./images/Actu/activ-actu.png",
     date: "17/09/2021",
     titre: "Nouvelles activités au Centre Social !",
@@ -77,13 +84,6 @@ var actu = [
     para: " ",
     autres: " "
   },
-  {
-    photo: "./images/Actu/prog.png",
-    date: "28/05/2021",
-    titre: "Programme de reprise des activités",
-    para: " ",
-    autres: " "
-  }
 ]
 
 // var art = [ 
