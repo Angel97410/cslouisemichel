@@ -64,25 +64,38 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/noel.png",
+    date: "10/11/2021",
+    titre: "Marché de Noël à Montbéliard. 🎅🤶",
+    para: "Le dimanche 19 décembre 2021",
+    para1: "Départ du centre : 8h45",
+    para2: "Retour au centre : 20h30",
+    autres: "⚠️ Le pass sanitaire est obligatoire, à partir de 12 ans et 2 mois. Inscriptions auprès du secrétariat.⚠️"
+  },
+  {
+    photo: "./images/Actu/parentalite1.png",
+    date: "11/10/2021",
+    titre: "Le forum des familles débute bientôt !! ",
+    para: "Mardi 12 octobre : À partir de 9 h 30 conférence de Moïra MIKOLAJCZAK. ",
+    para1: "À partir de 14 h conférence de Daniel COUM en retranscription.",
+    para2: "Mercredi 13 octobre et de 14 h à 17 h Portes Ouvertes Lieu d’Accueil Parents/Enfants. ",
+    autres: "⚠️ Afin de respecter les règles de distanciation, veuillez vous inscrire auprès du secrétariat ou de Joséphine.  ⚠️ "
+  },
+  {
+    photo: "./images/Actu/vacance-famille.jpg",
+    date: "08/10/2021",
+    titre: "Les vacances familles débutent bientôt ! ",
+    para: "Au programme  : - Sortie familles (Parent/Enfant) : Parc animalier à Fougerolles 🦌",
+    para1: " - Atelier sophrologie (Parent/Enfant) : La bulle des émotions ",
+    para2: "- Atelier parent : Disco Soupe 🍲 ",
+    autres: "- Atelier couture (Parents) sur le thème de l'automne/halloween "
+  },
+  {
     photo: "./images/Actu/forum.jpg",
     date: "01/10/2021",
     titre: "Le forum des familles débute bientôt !! ",
     para: "Pour les personnes non véhiculées, le centre social vous propose une navette (départ le matin et retour prévu dans l'après midi). Vous pouvez vous inscrire auprès de Joséphine (référente famille) ou à l'accueil du centre social. ",
     autres: " ⚠️ Certains ateliers ne sont accessibles que sur inscription auprès de la CAE au 0329399810 ⚠️ "
-  },
-  {
-    photo: "./images/Actu/activ-actu.png",
-    date: "17/09/2021",
-    titre: "Nouvelles activités au Centre Social !",
-    para: " ",
-    autres: " "
-  },
-  {
-    photo: "./images/Actu/projet-social.png",
-    date: "04/06/2021",
-    titre: "Projet du centre social",
-    para: " ",
-    autres: " "
   },
 ]
 
