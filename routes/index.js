@@ -64,6 +64,15 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/telethon.png",
+    date: "15/11/2021",
+    titre: "Téléthon à l'oriental",
+    para: "Un repas au profit du téléthon est organisé le samedi 11 décembre à midi.",
+    para1: "Les réservations se font à l'accueil du centre social. ",
+    para2: "⚠️ Les inscriptions sont limitées : les 70 premiers seront prioritaires. ⚠️",
+    autres: "⚠️ Le pass sanitaire est obligatoire, à partir de 12 ans et 2 mois ⚠️"
+  },
+  {
     photo: "./images/Actu/noel.png",
     date: "10/11/2021",
     titre: "Marché de Noël à Montbéliard. 🎅🤶",
@@ -89,13 +98,6 @@ var actu = [
     para1: " - Atelier sophrologie (Parent/Enfant) : La bulle des émotions ",
     para2: "- Atelier parent : Disco Soupe 🍲 ",
     autres: "- Atelier couture (Parents) sur le thème de l'automne/halloween "
-  },
-  {
-    photo: "./images/Actu/forum.jpg",
-    date: "01/10/2021",
-    titre: "Le forum des familles débute bientôt !! ",
-    para: "Pour les personnes non véhiculées, le centre social vous propose une navette (départ le matin et retour prévu dans l'après midi). Vous pouvez vous inscrire auprès de Joséphine (référente famille) ou à l'accueil du centre social. ",
-    autres: " ⚠️ Certains ateliers ne sont accessibles que sur inscription auprès de la CAE au 0329399810 ⚠️ "
   },
 ]
 
