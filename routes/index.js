@@ -90,15 +90,6 @@ var actu = [
     para2: "Mercredi 13 octobre et de 14 h à 17 h Portes Ouvertes Lieu d’Accueil Parents/Enfants. ",
     autres: "⚠️ Afin de respecter les règles de distanciation, veuillez vous inscrire auprès du secrétariat ou de Joséphine.  ⚠️ "
   },
-  {
-    photo: "./images/Actu/vacance-famille.jpg",
-    date: "08/10/2021",
-    titre: "Les vacances familles débutent bientôt ! ",
-    para: "Au programme  : - Sortie familles (Parent/Enfant) : Parc animalier à Fougerolles 🦌",
-    para1: " - Atelier sophrologie (Parent/Enfant) : La bulle des émotions ",
-    para2: "- Atelier parent : Disco Soupe 🍲 ",
-    autres: "- Atelier couture (Parents) sur le thème de l'automne/halloween "
-  },
 ]
 
 // var art = [ 
