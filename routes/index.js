@@ -43,21 +43,20 @@ let transporter = nodemailer.createTransport({ pool:true,
 
 var ovh = require('ovh')({
   endpoint: 'ovh-eu',
-  appKey: 'u4sryhtISV5XLUDF',
-  appSecret: 'mddaNsiYuzb5B11zaoxTpzXwFj0NFRP9'
+  appKey: 'lQrsc4SNeGQKbXFQ',
+  appSecret: 'vapqcPXfGycAJt1GjpTvEs8EUgxNhZNF'
 });
 
 ovh.request('POST', '/auth/credential', {
   'accessRules': [
     { 'method': 'GET', 'path': '/*'},
-    { 'method': 'POST', 'path': '/message*jobs'},
+    { 'method': 'POST', 'path': '/*'},
     { 'method': 'PUT', 'path': '/*'},
     { 'method': 'DELETE', 'path': '/*'}
   ]
 }, function (error, credential) {
   console.log(error || credential);
 });
-
 
 newsletter = []
 Newmail = [{}]
@@ -238,7 +237,7 @@ router.get('/Qui', function (req, res, next) {
 });
 
 // Nous contacter
-router.post('/message', async function (req, res, next) {
+ovh.request('POST','/message', async function (req, res, next) {
   mail = req.body.mail;
   Newmail.push(mail);
   message = req.body.message;
@@ -260,6 +259,7 @@ router.post('/message', async function (req, res, next) {
   transporter.close()
   // alert("Message envoyé")
 });
+
 
 router.get('/Nous-contacter', function (req, res, next) {
   res.render('Nous-contacter');
