@@ -41,22 +41,22 @@ let transporter = nodemailer.createTransport({ pool:true,
   },
 });
 
-var ovh = require('ovh')({
-  endpoint: 'ovh-eu',
-  appKey: 'lQrsc4SNeGQKbXFQ',
-  appSecret: 'vapqcPXfGycAJt1GjpTvEs8EUgxNhZNF'
-});
+// var ovh = require('ovh')({
+//   endpoint: 'ovh-eu',
+//   appKey: 'lQrsc4SNeGQKbXFQ',
+//   appSecret: 'vapqcPXfGycAJt1GjpTvEs8EUgxNhZNF'
+// });
 
-ovh.request('POST', '/auth/credential', {
-  'accessRules': [
-    { 'method': 'GET', 'path': '/*'},
-    { 'method': 'POST', 'path': '/*'},
-    { 'method': 'PUT', 'path': '/*'},
-    { 'method': 'DELETE', 'path': '/*'}
-  ]
-}, function (error, credential) {
-  console.log(error || credential);
-});
+// ovh.request('POST', '/auth/credential', {
+//   'accessRules': [
+//     { 'method': 'GET', 'path': '/*'},
+//     { 'method': 'POST', 'path': '/*'},
+//     { 'method': 'PUT', 'path': '/*'},
+//     { 'method': 'DELETE', 'path': '/*'}
+//   ]
+// }, function (error, credential) {
+//   console.log(error || credential);
+// });
 
 newsletter = []
 Newmail = [{}]
@@ -237,8 +237,8 @@ router.get('/Qui', function (req, res, next) {
 });
 
 // Nous contacter
-ovh.request('POST','/message', async function (req, res, next) {
-  mail = req.body.mail;
+router.post('/message', async function (req, res, next) {
+ var mail = req.body.mail;
   Newmail.push(mail);
   message = req.body.message;
   newmessage.push(message);
