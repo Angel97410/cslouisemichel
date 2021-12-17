@@ -7,7 +7,7 @@ const {
 const {
   Router
 } = require('express');
-const nodemailer = require("nodemailer");
+var nodemailer = require("nodemailer");
 var mongoose = require('mongoose');
 var options = {
   connectTimeoutMS: 5000,
@@ -41,6 +41,14 @@ let transporter = nodemailer.createTransport({ pool:true,
   },
 });
 
+var transport = nodemailer.createTransport({
+  host: 'smtp.office365.com',
+  port: 587,
+  auth: {
+      user: 'robert.angelique@outlook.com',
+      pass: 'Ti.lilik974'
+  }
+});
 // var ovh = require('ovh')({
 //   endpoint: 'ovh-eu',
 //   appKey: 'lQrsc4SNeGQKbXFQ',
@@ -63,7 +71,7 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
-    photo: "./images/Actu/telethon.png",
+    photo: "./images/Actu/telethon-annul.png",
     date: "15/11/2021",
     titre: "Téléthon à l'oriental",
     para: "Un repas au profit du téléthon est organisé le samedi 11 décembre à midi.",
@@ -72,9 +80,9 @@ var actu = [
     autres: "⚠️ Le pass sanitaire est obligatoire, à partir de 12 ans et 2 mois ⚠️"
   },
   {
-    photo: "./images/Actu/noel.png",
+    photo: "./images/Actu/noel-annul.png",
     date: "10/11/2021",
-    titre: "Marché de Noël à Montbéliard. 🎅🤶",
+    titre: "Marché de Noël à Montbéliard.",
     para: "Le dimanche 19 décembre 2021",
     para1: "Départ du centre : 8h45",
     para2: "Retour au centre : 20h30",
@@ -244,19 +252,34 @@ router.post('/message', async function (req, res, next) {
   newmessage.push(message);
   // console.log(mail, Newmail)
 
-  let info = await transporter.sendMail({
-    from: '"Formulaire Contact" <robert.angelique@outlook.com>', // sender address
-    to: "robert.angelique@outlook.com", // list of receivers
-    subject: "Contact", // Subject line
-    text: message, // plain text body
-    html: "Adresse mail :" + mail + "  " + "Message : " + message, // html body
-  });
+  // let info = await transporter.sendMail({
+  //   from: '"Formulaire Contact" <robert.angelique@outlook.com>', // sender address
+  //   to: "robert.angelique@outlook.com", // list of receivers
+  //   subject: "Contact", // Subject line
+  //   text: message, // plain text body
+  //   html: "Adresse mail :" + mail + "  " + "Message : " + message, // html body
+  var mailOptions = {
+    from: '"Formulaire Contact" <robert.angelique@outlook.com>',
+    to: "robert.angelique@outlook.com",
+    subject: "Contact",
+    html: message,
+    text: "Adresse mail :" + mail + "  " + "Message : " + message,
 
+  };
 
+  transport.sendMail(mailOptions, function(error, info) {
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(info);
+    }
+});
+ 
+ transport.close();
   // console.log("Message sent: %s", info.messageId);
   // console.log(mail)
-  res.redirect('/')
-  transporter.close()
+  // res.redirect('/')
+  // transporter.close()
   // alert("Message envoyé")
 });
 
