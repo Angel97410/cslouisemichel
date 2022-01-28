@@ -71,6 +71,23 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/VACANCES-FAMILLES-hiver-2022.png",
+    date: "28/01/2022",
+    titre: "🌴 Les vacances Familles débutent bientôt !! 🌴",
+    para: "Le 08 février : sortie BOWLING - en famille",
+    para1: "Le 09 février : Jeux de société - en famille",
+    para2: "Le 10 février : sortie à Metz (Ikéa + centre commercial Waves) - Adultes ",
+    autres: "⚠️ N'hésitez pas à vous rapprocher du secrétariat pour vous y inscrire, les places sont limitées. ⚠️ "
+  },
+  {
+    photo: "./images/Actu/Affiche-Mouv-truck-2022.png",
+    date: "28/01/2022",
+    titre: "Le Mouv'TRUCK vous donne rendez-vous au centre social Louise Michel.",
+    para: "Du 04 au 08 Février tous les vendredis de 10h à 11h.",
+    para1: "Afin de vous proposer des activités physiques",
+    para2: "et sportives gratuites adaptées bien évidemment à votre niveau.",
+  },
+  {
     photo: "./images/Actu/telethon-annul.png",
     date: "15/11/2021",
     titre: "Téléthon à l'oriental",
@@ -78,24 +95,6 @@ var actu = [
     para1: "Les réservations se font à l'accueil du centre social. ",
     para2: "⚠️ Les inscriptions sont limitées : les 70 premiers seront prioritaires. ⚠️",
     autres: "⚠️ Le pass sanitaire est obligatoire, à partir de 12 ans et 2 mois ⚠️"
-  },
-  {
-    photo: "./images/Actu/noel-annul.png",
-    date: "10/11/2021",
-    titre: "Marché de Noël à Montbéliard.",
-    para: "Le dimanche 19 décembre 2021",
-    para1: "Départ du centre : 8h45",
-    para2: "Retour au centre : 20h30",
-    autres: "⚠️ Le pass sanitaire est obligatoire, à partir de 12 ans et 2 mois. Inscriptions auprès du secrétariat.⚠️"
-  },
-  {
-    photo: "./images/Actu/parentalite1.png",
-    date: "11/10/2021",
-    titre: "Le forum des familles débute bientôt !! ",
-    para: "Mardi 12 octobre : À partir de 9 h 30 conférence de Moïra MIKOLAJCZAK. ",
-    para1: "À partir de 14 h conférence de Daniel COUM en retranscription.",
-    para2: "Mercredi 13 octobre et de 14 h à 17 h Portes Ouvertes Lieu d’Accueil Parents/Enfants. ",
-    autres: "⚠️ Afin de respecter les règles de distanciation, veuillez vous inscrire auprès du secrétariat ou de Joséphine.  ⚠️ "
   },
 ]
 

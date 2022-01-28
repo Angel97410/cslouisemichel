@@ -85,16 +85,9 @@
       <!-- SLIDE -->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner col-12">
-          <!-- <div class="carousel-item active">
-            <img src="./images/Accueil/bonne-annee.png" class="d-fluid w-100" alt="Centre">
-          </div> -->
-          <div class="carousel-item active">
+        <div class="carousel-item active">
             <img src="./images/Accueil/centre.jpg" class="d-fluid w-100" alt="Centre">
-          </div>
-          <!-- <div class="carousel-item">
-              <img src="./images/Accueil/centre.jpg" class="d-fluid w-100" alt="Centre">
-            </div> -->
-          </div>
+          </div> 
           <div class="carousel-item">
               <img src="./images/Accueil/annexe.jpg" class="d-fluid w-100" alt="Centre">
             </div>
@@ -133,7 +126,7 @@
               <div class="card col-md-6 col-xs-12"
                 style="margin: 0%; border: transparent; border-radius: 0%;width: 50%;">
                 <img src="./images/Actu/tract-vacances-hiver.jpg" class="card-img-top img_actu" style="width: auto;">
-                <a href="./images/Actu/tract-vacances-hiver.pdf" download style="text-align:center; color: black;"><i
+                <a href="./images/Actu/tract-vacances-hiver.pdf" download style="text-align:center; color: black; font-size: 20px;"><i
                     class="fas fa-download">Télécharger la fiche d'inscription</i></a>
                 <div class="card-body">
                   <p style="color: gray;">Publié le : 25/01/2022</p>
@@ -167,7 +160,7 @@
                 for(var i=0; i<actu.length; i++) {
                   %>
               <div class="card col-md-6 col-xs-12" style="margin: 0%; border: transparent; border-radius: 0%;">
-                <img src="<%= actu[i].photo %>" class="card-img-top img_actu" alt="Actualités">
+                <img src="<%= actu[i].photo %>" class="card-img-top img_actu" alt="Actualités" style="width: auto;">
                 <div class="card-body">
                   <p style="color: gray;">Publié le : <%= actu[i].date %></p>
                   <h5 class="m card-title"><%= actu[i].titre %></h5>
