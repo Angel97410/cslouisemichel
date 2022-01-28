@@ -197,3 +197,22 @@ h1{
   max-width: 1280px;
 } */
 
+.carouselExampleControls {
+  height: 100%;
+  padding: 0px;
+  width: 100%;}
+
+  .carousel-inner {
+      height: 100%;
+      width: 60%;}
+
+      .carousel-item {
+          height: 100%;
+          width: 100%;
+      }
+  
+
+  .carousel-item img {
+      height: 80%;
+      width: 100%;
+  }
