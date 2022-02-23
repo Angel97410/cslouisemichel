@@ -71,6 +71,25 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
+    photo: "./images/Actu/Educ-ecran.png",
+    date: "23/02/2022",
+    titre: "Envie de passer un moment convivial ? ",
+    para: "Autour d'un jeu de société 🎲 avec comme thème LES ECRANS 🤳",
+    para1: "N'hésitez pas à nous rejoindre au centre social Louise Michel à 14h le :",
+    para2: " - 01 mars : Atelier 1 ",
+    para3: "- 08 mars : Atelier 2 ",
+    para4: " - 15 mars : Atelier 3",
+    autres: "⚠️ Pour tout renseignement supplémentaire vous pouvez nous contacter au 03.29.34.60.85 GRATUIT et sur inscription ⚠️ "
+  },
+  {
+    photo: "./images/Actu/Affiche-Mouv-truck-2022.png",
+    date: "28/01/2022",
+    titre: "Le Mouv'TRUCK vous donne rendez-vous au centre social Louise Michel.",
+    para: "Du 04 Février au 08 Avril tous les vendredis de 10h à 11h.",
+    para1: "Afin de vous proposer des activités physiques",
+    para2: "et sportives gratuites adaptées bien évidemment à votre niveau.",
+  },
+  {
     photo: "./images/Actu/VACANCES-FAMILLES-hiver-2022.png",
     date: "28/01/2022",
     titre: "🌴 Les vacances Familles débutent bientôt !! 🌴",
@@ -78,14 +97,6 @@ var actu = [
     para1: "Le 09 février : Jeux de société - en famille",
     para2: "Le 10 février : sortie à Metz (Ikéa + centre commercial Waves) - Adultes ",
     autres: "⚠️ N'hésitez pas à vous rapprocher du secrétariat pour vous y inscrire, les places sont limitées. ⚠️ "
-  },
-  {
-    photo: "./images/Actu/Affiche-Mouv-truck-2022.png",
-    date: "28/01/2022",
-    titre: "Le Mouv'TRUCK vous donne rendez-vous au centre social Louise Michel.",
-    para: "Du 04 au 08 Février tous les vendredis de 10h à 11h.",
-    para1: "Afin de vous proposer des activités physiques",
-    para2: "et sportives gratuites adaptées bien évidemment à votre niveau.",
   },
   {
     photo: "./images/Actu/telethon-annul.png",

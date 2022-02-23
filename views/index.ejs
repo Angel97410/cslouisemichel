@@ -123,7 +123,9 @@
                 </div>
               </div> -->
 
-              <div class="card col-md-6 col-xs-12"
+              <!-- VACANCES + PROG A TELECHARGER -->
+
+              <!-- <div class="card col-md-6 col-xs-12"
                 style="margin: 0%; border: transparent; border-radius: 0%;width: 50%;">
                 <img src="./images/Actu/tract-vacances-hiver.jpg" class="card-img-top img_actu" style="width: auto;">
                 <a href="./images/Actu/tract-vacances-hiver.pdf" download style="text-align:center; color: black; font-size: 20px;"><i
@@ -142,19 +144,7 @@
                   <br> <b style="color: red;">Inscription obligatoire avant le Mercredi 02 février 2022 </b>
                 </p> 
                 </div>
-              </div> 
-
-              <!-- <div class="card col-md-6 col-xs-12" style="margin: 0%; border: transparent; border-radius: 0%;">
-                <video controls style="width: auto; height: auto;" style="justify-content: center;">
-                  <source src="./images/Actu/danse.mp4" type="video/mp4">
-                </video>
-                <div class="card-body">
-                  <p style="color: gray;">Publié le : 21/05/2021</p>
-                  <h5 class="m card-title">Reprise des ateliers DANSE pour les plus jeunes</h5>
-                  <p class="m card-text">RDV pour tous le Samedi 5 juin au Centre Social</p>
-                  <a class="btn btn-outline-dark m" href="/actualite" role="button" style="align-items: center; margin-top: 30px;">En savoir plus</a>
-                </div>
-              </div> -->
+              </div>  -->
 
               <% 
                 for(var i=0; i<actu.length; i++) {
@@ -167,6 +157,8 @@
                   <p class="m card-text"><%= actu[i].para %></p>
                   <p class="m card-text"><%= actu[i].para1 %></p>
                   <p class="m card-text"><%= actu[i].para2 %></p>
+                  <p class="m card-text"><%= actu[i].para3 %></p>
+                  <p class="m card-text"><%= actu[i].para4 %></p>
                   <p class="m card-text"><%= actu[i].autres %></p>
                 </div>
               </div>
@@ -183,10 +175,10 @@
                   <h1 style="text-align: center; border: solid black;">Contact</h1>
                   <p style="font-size: 25px; color: black;"><i class="fas fa-map-marker-alt"> 1 rue Louis Blériot,
                       <br>&ensp;&ensp;88190 Golbey</i></p>
-                  <i class="fas fa-phone-square-alt" style="font-size: 25px; color: black;"> 03 29 34 60 85</i>
+                  <i class="fas fa-phone-square-alt" style="font-size: 25px; color: black;"><a href="tel: +33329346085" style="color: black; padding: 10px;">03 29 34 60 85</a> </i>
                   <br>
                   <br>
-                  <i class="fas fa-at" style="font-size: 25px; color: black;"> cslouisemichel@hotmail.fr</i>
+                  <i class="fas fa-at" style="font-size: 25px; color: black;"><a href="mailto:cslouisemichel@hotmail.fr" style="color: black;">cslouisemichel@hotmail.fr</a></i>
                   <br>
                   <h1 style="text-align: center; border: solid black;">Horaire du secrétariat :</h1>
                   <p style="font-size: 25px; color: black;">&ensp;&ensp; 09h00 à 12h00</p>
