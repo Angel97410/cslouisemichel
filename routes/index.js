@@ -71,7 +71,15 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
-    photo: "./images/Actu/Educ-ecran.png",
+    photo: "./images/Actu/CLAS.png",
+    date: "09/03/2022",
+    titre: "Reunion d'informations",
+    para: "Le centre social Louise Michel vous convie à une réunion d'informations concernant le dispositif CLAS.",
+    para1: "Nous vous donnons rendez-vous le Mardi 15 mars 2022 à 17h15 dans la grande salle du centre social.",
+    para2: "Pour plus d'informations, n'hésitez pas à nous contacter.",
+  },
+  {
+    photo: "./images/Actu/ecran.png",
     date: "23/02/2022",
     titre: "Envie de passer un moment convivial ? ",
     para: "Autour d'un jeu de société 🎲 avec comme thème LES ECRANS 🤳",
@@ -88,24 +96,6 @@ var actu = [
     para: "Du 04 Février au 08 Avril tous les vendredis de 10h à 11h.",
     para1: "Afin de vous proposer des activités physiques",
     para2: "et sportives gratuites adaptées bien évidemment à votre niveau.",
-  },
-  {
-    photo: "./images/Actu/VACANCES-FAMILLES-hiver-2022.png",
-    date: "28/01/2022",
-    titre: "🌴 Les vacances Familles débutent bientôt !! 🌴",
-    para: "Le 08 février : sortie BOWLING - en famille",
-    para1: "Le 09 février : Jeux de société - en famille",
-    para2: "Le 10 février : sortie à Metz (Ikéa + centre commercial Waves) - Adultes ",
-    autres: "⚠️ N'hésitez pas à vous rapprocher du secrétariat pour vous y inscrire, les places sont limitées. ⚠️ "
-  },
-  {
-    photo: "./images/Actu/telethon-annul.png",
-    date: "15/11/2021",
-    titre: "Téléthon à l'oriental",
-    para: "Un repas au profit du téléthon est organisé le samedi 11 décembre à midi.",
-    para1: "Les réservations se font à l'accueil du centre social. ",
-    para2: "⚠️ Les inscriptions sont limitées : les 70 premiers seront prioritaires. ⚠️",
-    autres: "⚠️ Le pass sanitaire est obligatoire, à partir de 12 ans et 2 mois ⚠️"
   },
 ]
 
