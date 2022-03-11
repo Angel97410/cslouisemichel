@@ -216,3 +216,7 @@ h1{
       height: 80%;
       width: 100%;
   }
+  /* pour plus d'info */
+  .contact{
+    font: 1.2em "Trebuchet MS",Arial,sans-serif ;
+  }
