@@ -71,21 +71,6 @@ Newmail = [{}]
 newmessage = [{}]
 var actu = [
   {
-    photo: "./images/Actu/Marionnette.png",
-    date: "10/03/2022",
-    titre: "Spectacle de marionnette",
-    para: "Le centre social Louise Michel vous invite ✉️ à un spectacle de Marionnette 🎭",
-    para1: "le Mercredi 16 mars à 10h au centre social.",
-    para2: "Le spectacle est ouvert aux familles 👨‍👨‍👧‍👦, GRATUIT et sur inscription.",
-  },
-  {
-    photo: "./images/Actu/CLAS.png",
-    date: "09/03/2022",
-    titre: "Reunion d'informations",
-    para: "Le centre social Louise Michel vous convie à une réunion d'informations concernant le dispositif CLAS.",
-    para1: "Nous vous donnons rendez-vous le Mardi 15 mars 2022 à 17h15 dans la grande salle du centre social.",
-  },
-  {
     photo: "./images/Actu/ecran.png",
     date: "23/02/2022",
     titre: "Envie de passer un moment convivial ? ",
